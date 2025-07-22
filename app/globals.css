@@ -15,3 +15,35 @@
     font-family: var(--font-inter), sans-serif;
   }
 }
+
+/* Gradient Glow Effects */
+@layer utilities {
+  .gradient-glow {
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 40%, transparent 70%);
+  }
+  
+  .gradient-glow-large {
+    background: radial-gradient(ellipse 800px 400px at center, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 50%, transparent 100%);
+  }
+  
+  .gradient-overlay {
+    position: relative;
+  }
+  
+  .gradient-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse 1200px 600px at center, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 60%, transparent 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .gradient-overlay > * {
+    position: relative;
+    z-index: 2;
+  }
+}

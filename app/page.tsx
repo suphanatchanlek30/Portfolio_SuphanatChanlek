@@ -1,12 +1,12 @@
 import Navbar from '../components/Navbar';
+import HeroSection from '../components/HeroSection';
+import PageLayout from '../components/PageLayout';
 
 export default function Home() {
   return (
-    <div>
+    <PageLayout>
       <Navbar />
-      <main className="container mx-auto p-8 bg-[#020202] text-white">
-        <h1>Welcome to Suphanat's Portfolio</h1>
-      </main>
-    </div>
+      <HeroSection />
+    </PageLayout>
   );
 }
