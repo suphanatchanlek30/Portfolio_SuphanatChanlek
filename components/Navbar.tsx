@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-4">
           {/* GitHub Icon */}
           <a 
-            href="https://github.com" 
+            href="https://github.com/suphanatchanlek30" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-[60px] h-[35px] bg-white text-black rounded-[8px] flex items-center justify-center hover:bg-gray-200 transition-colors duration-200"
@@ -62,7 +62,7 @@ const Navbar = () => {
 
           {/* LinkedIn Icon */}
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/suphanat-chanlek-944802305/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-[60px] h-[35px] bg-white text-black rounded-[8px] flex items-center justify-center hover:bg-gray-200 transition-colors duration-200"
